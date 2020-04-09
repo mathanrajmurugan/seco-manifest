@@ -1,0 +1,25 @@
+SECO Repo Manifest README
+
+This repo is used to download manifests for SECO BSP releases.
+
+
+
+To use this manifest repo, the 'repo' tool must be isntalled first.
+--------------------------------------------------------
+$: mkdir ~/bin
+$: curl http://commondatastorage.googleapis.com/git-repo-downloads/repo  > ~/bin/repo
+$: chmod a+x ~/bin/repo
+$: PATH=${PATH}:~/bin
+
+To execute 
+$: mkdir <release>
+$: cd <release>
+$: repo init -u git@git.seco.com:arm/nxp/imx/develop/seco-manifest -b <branch name> [ -m <release manifest>]
+$: repo sync
+
+Each branch will have detailed READMEs describing exact syntax.
+
+Examples
+--------
+To download the 4.19.35-1.0.0 (actuallu the master branch) release
+repo init -u git@git.seco.com:arm/nxp/imx/develop/seco-manifest -m seco-4.19.35-1.1.0_ga.xml
