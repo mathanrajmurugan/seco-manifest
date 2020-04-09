@@ -10,7 +10,7 @@
 	<linkfile src="seco-setup.sh" dest="seco-setup-dev.sh"/>
   </project>
 
-  <project remote="seco-bsp-dev" revision="master" name="tools-seco-project-config" path="sources/meta-seco-bsp/conf/tools-prj-config"/>
+  <project remote="meta-seco-bsp" revision="master" name="tools-seco-project-config" path="sources/meta-seco-bsp/conf/tools-prj-config"/>
 
   <!-- Docker support -->
   <project remote="yocto" name="meta-virtualization" path="sources/meta-virtualization" revision="bda5b6ab326a4926aedd32f137de5f3837c8cdb8"/>
