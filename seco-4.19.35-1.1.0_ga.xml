@@ -3,7 +3,7 @@
 
   <include name="imx-4.19.35-1.1.0.xml"/>
 
-  <remote fetch="https://git.seco.com/arm/nxp/imx/develop/" name="meta-seco-bsp"/>
+  <remote fetch="https://git.seco.com/arm/nxp/imx/develop/yocto/4.x/" name="meta-seco-bsp"/>
   
   <!-- Development Version -->
   <project remote="meta-seco-bsp" revision="master" name="meta-seco-bsp" path="sources/meta-seco-bsp">
